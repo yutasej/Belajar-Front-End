@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/olivia-anne-snyder-w15i7-iiwws-unsplash.jpg");
+  font-family: "Montserrat";
+  color: #fdf5e6;
+}
+
+.container {
+  margin: auto;
+  width: 750px;
+  background-color: #778899;
+}
+
+.header {
+  padding: 20px 20px;
+}
+
+.header h1 {
+  font-weight: 800;
+}
+
+.header ul li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fdf5e6;
+  font-size: 15px;
+}
+
+.hero {
+  margin-top: 9px;
+  height: 500px;
+  background-image: url("../img/background-image.jpg");
+  background-size: cover;
+}
+
+.content {
+  margin-top: -5px;
+  padding: 20px 10px;
+}
+
+.content .penulis {
+  font-size: 10px;
+}
+
+.content span {
+  color: green;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+footer {
+  background-color: black;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}

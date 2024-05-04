@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #fff8dc;
+  font-family: "Inter", sans-serif;
+  color: #a9a9a9;
+}
+
+.topbar {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 9999999;
+}
+
+.topbar ul li {
+  display: inline-block;
+}
+
+.topbar ul {
+  text-align: center;
+  line-height: 50px;
+}
+
+.topbar a {
+  color: #a9a9a9;
+  padding-right: 50px;
+}
+
+.container {
+  width: 960px;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 70px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.twitter {
+  display: inline-block;
+  width: 240px;
+  height: 256px;
+  background-image: url(../img/twitter.png);
+  position: absolute;
+  right: -21px;
+  top: -30px;
+}
+
+.header {
+  margin: 10px 10px;
+}
+
+.header h1 {
+  font-weight: 800;
+}
+
+.image {
+  height: 400px;
+  background-image: url("../img/aedrian-o-hsk316GO4-unsplash.jpg");
+  background-size: cover;
+  background-position: 0 -500px;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+.main {
+  margin: 10px 10px;
+  width: 600px;
+  float: left;
+}
+
+.penulis {
+  font-size: 12px;
+}
+
+.penulis span {
+  color: #2f4f4f;
+}
+
+.main p {
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  margin: 10px 10px;
+  width: 300px;
+  float: right;
+}
+
+.sidebar img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.sidebar p {
+  float: right;
+}
+
+.footer {
+  height: 50px;
+  background-color: black;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.footer p {
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
