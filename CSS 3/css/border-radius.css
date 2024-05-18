@@ -1,0 +1,27 @@
+div {
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+}
+
+.satu {
+    background-color: aqua;
+    background-image: url(../img/yutase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.dua {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    display: inline-block;
+    background-color: blueviolet;
+    background-image: url(../img/yutase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 120px 120px 0 0;
+}

@@ -1,0 +1,21 @@
+body {
+    background-image: url(../img/carbon_fibre.png);
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(127, 255, 212, 0.3);
+    margin: 50px auto;
+    position: relative;
+}
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    opacity: .9;
+}
