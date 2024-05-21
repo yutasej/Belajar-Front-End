@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px black;
+  margin: 100px auto;
+  padding: 10px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+}
