@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+  margin: 50px;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.container .header {
+  display: grid;
+  grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+  min-height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+}
+
+.container .header .hero {
+  grid-area: hero;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: grid;
+  place-content: center;
+}
+
+.container .header .hero h3 {
+  color: #eee;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.container .header .hero p {
+  color: #eee;
+  font-size: 2.4em;
+}
+
+.container .header .features {
+  display: grid;
+  place-content: center;
+}
+
+.container .header .features .item {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.container .header .features .price {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.container .header .feature-1 {
+  grid-area: feature-1;
+  background-image: url(../img/feature-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .header .feature-2 {
+  grid-area: feature-2;
+  background-image: url(../img/feature-2.jpg);
+  background-position: center;
+  background-size: center;
+}
+
+.container .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.container .services h2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+}
+
+.container .services .service {
+  background-color: #eee;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .services .service .icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px auto;
+}
+
+.container .services .service h3 {
+  font-size: 1.3em;
+}
+
+.container .services .service p {
+  font-size: 0.9em;
+}
+
+.container .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.container .gallery h2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .gallery img {
+  border: 2px solid black;
+}
+
+/* Responsive Breakpoint */
+
+@media (max-width: 500px) {
+  body {
+    margin: 20px;
+  }
+
+  .container .header {
+    grid-template-areas:
+      "hero"
+      "feature-1"
+      "feature-2";
+  }
+}
+
+@media (max-width: 998px) {
+  body {
+    font-size: 13px;
+  }
+}
