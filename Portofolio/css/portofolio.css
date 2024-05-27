@@ -1,0 +1,116 @@
+:root {
+  --bg: #393e46;
+  --secondary-bg: #222831;
+  --primary: #eeeeee;
+  --secondary: #fd7014;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+/* Navbar Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 7%;
+  background-color: var(--secondary-bg);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--primary);
+}
+
+.navbar .navbar-logo {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-logo span {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav {
+  position: relative;
+}
+
+.navbar .navbar-nav a {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 1.2rem;
+  padding-top: 0.5rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  border-bottom: 0.1rem solid var(--secondary);
+  display: block;
+  margin-top: 0.5rem;
+  transform: scale(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: var(--primary);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--secondary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section Start */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.hero h2 span {
+  color: var(--secondary);
+}
+
+.hero .paragraf {
+  margin-top: 2rem;
+}
