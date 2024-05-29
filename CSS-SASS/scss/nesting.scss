@@ -1,0 +1,38 @@
+// main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 2px;
+//   }
+// }
+
+// Parent Selector Using &
+// main {
+//   .container & {
+//     background-color: lightblue;
+//   }
+
+//   &:hover {
+//     background-color: salmon;
+//   }
+// }
+
+.main {
+  & &-heading {
+    font-size: 1.2rem;
+  }
+
+  & &-paragraph {
+    font-size: 1.1rem;
+  }
+}
+
+.footer {
+  & &-heading {
+    font-size: 1.2rem;
+  }
+
+  & &-paragraph {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,23 @@
+// SASS Variable
+// $primary-color: #fff;
+// $secondary-color: #f2cc8f;
+// $text-color: #e07a5f;
+
+// body {
+//   background-color: $secondary-color;
+// }
+
+// h1 {
+//   color: $text-color;
+// }
+
+// MAP
+$alert: (
+  "warning": orange,
+  "danger": red,
+  "success": green,
+);
+
+body {
+  background-color: map-get($alert, "danger");
+}

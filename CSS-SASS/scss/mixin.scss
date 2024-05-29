@@ -1,0 +1,58 @@
+// Mixin Without Parameter & Mixin With Parameter
+@mixin flex-box($direction: row, $space: flex-start) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin inline-list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 1rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+body {
+  background-color: grey;
+}
+
+.header ul {
+  @include flex-box(row, center);
+  @include inline-list();
+  li {
+    background-color: green;
+  }
+}
+
+.main {
+  ul {
+    @include flex-box(column, center);
+  }
+  .container {
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    @include flex-box(row, center);
+    .box {
+      background-color: salmon;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  }
+}
+
+.footer ul {
+  @include flex-box(row, center);
+  @include inline-list();
+  li {
+    background-color: blue;
+  }
+}
