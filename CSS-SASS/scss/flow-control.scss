@@ -1,0 +1,13 @@
+@use "modules/submodules/mixin" as m;
+
+.square-profile {
+  @include m.profile-picture(200px, $circle: false);
+}
+
+.circle-profile {
+  @include m.profile-picture(80px, $circle: true);
+}
+
+.right {
+  @include m.triangle(2em, black, right);
+}
