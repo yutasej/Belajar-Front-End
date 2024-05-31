@@ -1,0 +1,19 @@
+@use "submodules/mixin" as m;
+
+.main {
+  ul {
+    @include m.flex-box(column, center);
+  }
+  .container {
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    @include m.flex-box(row, center);
+    .box {
+      background-color: salmon;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  }
+}

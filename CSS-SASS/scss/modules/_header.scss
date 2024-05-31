@@ -1,0 +1,9 @@
+@use "submodules/mixin" as m;
+
+.header ul {
+  @include m.flex-box(row, center);
+  @include m.inline-list();
+  li {
+    background-color: green;
+  }
+}
